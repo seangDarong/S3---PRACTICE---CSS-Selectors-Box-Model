@@ -1,10 +1,11 @@
 .container{
+    width: 100vw;
     height: 100vh;
-    width: 50vw;
     display: flex;
     justify-content: center;
-    background-color: aqua;
-    padding: 30px 20px;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0vh;
     
 }
 .profile{
@@ -12,5 +13,72 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
     
 }
+h2 {
+    font-weight: lighter;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.info{
+    display: flex;
+    gap: 10vw;
+
+}
+
+.detail{
+    text-align: center;
+    font-weight: bold;
+}
+.paragraph{
+text-align: center;
+font-size: 1em;
+}
+
+.row{
+    display: flex;
+    gap: 2em;
+}
+.logo{
+    width:3em;
+    height: 3em;
+    background-color: red;
+    border-radius: 50%;
+}
+
+button{
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: white;
+    border:2px solid;
+    border-color: grey;
+    cursor: pointer;
+    transition: background-color 0.3s,border-color 0.3s;
+
+}
+button:hover{
+    background-color: grey;
+    color: white;
+    border-color: white;
+}
+
+.profile img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+.logo img{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
